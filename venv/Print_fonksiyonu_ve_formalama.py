@@ -48,3 +48,5 @@ print(demet2.count(1))
 
 #index => arattığımız şeyin varsa hangi index te bulunduğunu gösterir
 #Not : Demetler sonradan değiştirilemez
+
+#deneme12344
