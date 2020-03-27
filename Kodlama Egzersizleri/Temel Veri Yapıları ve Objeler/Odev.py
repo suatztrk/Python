@@ -1,22 +1,23 @@
 """"
 => Problem 1
 Kullanıcıdan aldığınız 3 tane sayıyı çarparak ekrana yazdırın. Ekrana yazdırma işlemini format metoduyla yapmaya çalışın.
-""" #=== Cevap : ===
+# === Cevap : ==="""
+
 a = int(input("a:"))
 b = int(input("b:"))
 c = int(input("c:"))
-carpim = int(a*b*c)
+carpim = int(a * b * c)
 print("Birinci Sayi={}\nİkinci Sayi={}\nÜçüncü Sayi={}".format(a, b, c))
 print("Sonuç=", carpim)
 
-"""
-=> Problem 2
+"""=> Problem 2
 Kullanıcıdan aldığınız boy ve kilo değerlerine göre kullanıcının beden kitle indeksini bulun.
 Beden Kitle İndeksi : Kilo / Boy(m) Boy(m)
 #=== Cevap : ===\n"""
+
 kilo = int(input("Kilo :"))
 boy = int(input("Boy :"))
-endeks: float = ((kilo) / ((boy*boy)/10000))
+endeks: float = ((kilo) / ((boy * boy) / 10000))
 print("Vücut kitle indeksiniz : ", int(endeks))
 if endeks <= 18.5:
     print("Cılızsın")
@@ -26,35 +27,40 @@ if endeks <= 29.9:
     print("Fazla kilolusun")
 else:
     print("Aşırı Obezsin")
-"""
-=> Problem 3
+
+"""=> Problem 3
 Bir aracın kilometrede ne kadar yaktığı ve kaç kilometre yol yaptığı bilgilerini alın ve sürücünü toplam ne kadar ödemesini 
 gerektiğini hesaplayın.
-#=== Cevap : ===\n"""
-#kilometede yaktığı * yapılan yol
+#=== Cevap : ===\n
+# kilometede yaktığı * yapılan yol"""
 
 yaktigi = float(input("Yaktığı :"))
 kilometre = int(input("Kaç kilometre yapıldığı :"))
-sonuc = float(yaktigi*kilometre)
+sonuc = float(yaktigi * kilometre)
 print("Toplam ödemeniz gereken tutar ={} TL".format(float(sonuc)))
 
-"""
-=> Problem 4
-Kullanıcıdan ad,soyad ve numara bilgisini alarak bunları alt alta ekrana yazdırın.
-"""
+"""=> Problem 4
+Kullanıcıdan ad,soyad ve numara bilgisini alarak bunları alt alta ekrana yazdırın."""
+
 ad = str(input("Adınızı girtiniz :"))
 soyad = str(input("Soyadınızı giriniz :"))
 telefon = str(input("Telefon numaranızı giriniz :"))
-print("Adınız :{}\nSoyadınız :{}\nNumaranız :{}". format(ad, soyad, telefon))
+print("Adınız :{}\nSoyadınız :{}\nNumaranız :{}".format(ad, soyad, telefon))
 
-"""
-=> Problem 5
-Kullanıcıdan iki tane sayı isteyin ve bu sayıların değerlerini birbirleriyle değiştirin.
-"""
+"""=> Problem 5
+Kullanıcıdan iki tane sayı isteyin ve bu sayıların değerlerini birbirleriyle değiştirin."""
 
-"""
-=> Problem 6
+a = input("a:")
+b = input("b:")
+print("Değiştirilmeden önceki değer a:{} değer b:{}".format(a, b))
+a, b = b, a
+print("Değiştirildikten sonraki değer a: {} değer b:{}".format(a, b))
+
+"""=> Problem 6
 Kullanıcıdan bir dik üçgenin dik olan iki kenarını(a,b) alın ve hipotenüs uzunluğunu bulmaya çalışın.
-Hipotenüs Formülü: a^2 + b^2 = c^2
-"""
+Hipotenüs Formülü: a^2 + b^2 = c^2"""
 
+kenar1 = int(input("1.kenar :"))
+kenar2 = int(input("2.kenar :"))
+hiptenus = kenar1 ** 2 + kenar2 ** 2
+print("Hiptenüs = ", hiptenus)

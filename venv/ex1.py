@@ -5,7 +5,7 @@ b=2 #integer
 toplam = 0 #integer
 
 toplam=a+b;
-print("Toplam Sayı : ",toplam);
+print("Toplam Sayı : ", toplam);
 
 
 print(4/2)
