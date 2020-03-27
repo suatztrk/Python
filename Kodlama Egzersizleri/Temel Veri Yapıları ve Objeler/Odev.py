@@ -45,7 +45,7 @@ Kullanıcıdan ad,soyad ve numara bilgisini alarak bunları alt alta ekrana yazd
 ad = str(input("Adınızı girtiniz :"))
 soyad = str(input("Soyadınızı giriniz :"))
 telefon = str(input("Telefon numaranızı giriniz :"))
-print("Adınız :{}\nSoyadınız :{}\nNumaranız :{}", format(ad, telefon))
+print("Adınız :{}\nSoyadınız :{}\nNumaranız :{}". format(ad, soyad, telefon))
 
 """
 => Problem 5
