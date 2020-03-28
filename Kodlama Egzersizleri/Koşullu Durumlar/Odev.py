@@ -6,7 +6,7 @@ Kullanıcıdan alınan boy ve kilo değerlerine göre beden kitle indeksini hesa
  BKİ 25 ile 30 arasındaysa --------> Fazla Kilolu
  BKİ 30'un üstündeyse -------------> Obez
  *****************************************************************************"""
-"""
+
 kilo = float(input("Kilo: "))
 boy = int(input("Boy(cm olarak giriniz: )"))
 indeks = (kilo / (boy ** 2)*10000)
@@ -19,12 +19,11 @@ elif indeks >25 and indeks <= 30:
     print("Fazla Kilolu")
 else:
     print("Obez")
-"""
 
 """Problem 2
 Kullanıcıdan 3 tane sayı alın ve en büyük sayıyı ekrana yazdırın.
 *****************************************************************************"""
-"""
+
 sayi1 = int(input("1.sayi: "))
 sayi2 = int(input("2.sayi: "))
 sayi3 = int(input("3.sayi: "))
@@ -34,7 +33,7 @@ elif sayi2 > sayi1 and sayi2 > sayi3:
     print("En Büyük Sayı 2.sayıdır.")
 else:
     print("En Büyük Sayı 3.sayıdır.")
-"""
+
 """Problem 3
 Kullanıcının girdiği vize1,vize2,final notlarına notlarına göre harf notunu hesaplayın.
     Vize1 toplam notun %30'una etki edecek.
@@ -51,7 +50,6 @@ Kullanıcının girdiği vize1,vize2,final notlarına notlarına göre harf notu
     Toplam Not >=  55 -----> FD
     Toplam Not <  55 -----> FF
 *****************************************************************************"""
-"""
 vize1 = float(input("1.vize notunuzu giriniz: "))
 vize2 = float(input("2.vize notunuzu giriniz: "))
 final = float(input("Final notunuzu giriniz: "))
@@ -74,7 +72,7 @@ elif ortalama >= 55:
     print("FD")
 else:
     print("FF")
-"""
+
 """Problem 4
 Şimdi de geometrik şekil hesaplama işlemi yapalım. İlk olarak kullanıcıdan üçgenin mi dörtgenin mi tipini bulmak istediğini sorun.
 Eğer kullanıcı "Dörtgen" cevabını verirse , 4 tane kenar isteyip bu dörtgenin kare mi , dikdörtgen mi yoksa sıradan bir dörtgen mi 
